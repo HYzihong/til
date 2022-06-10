@@ -3,7 +3,7 @@
  * @Date: 2022-06-05 18:14:29
  * @LastEditors: hy
  * @Description:
- * @LastEditTime: 2022-06-07 23:57:17
+ * @LastEditTime: 2022-06-09 23:23:23
  * @FilePath: /til/vim/base_operation.md
  * Copyright 2022 hy, All Rights Reserved.
  * 仅供学习使用~
@@ -77,7 +77,9 @@ function a() {
 > 文本是结构的，可以快速选择
 > 有一定选择范围
 
-##### 语法 operator + 内部 or 外部 + 文本对象
+##### 语法
+
+operator + 内部 or 外部 + 文本对象
 
 ##### 内部 + 外部
 
@@ -87,6 +89,7 @@ function a() {
 ##### 一些文本对象
 
 - `w`: 单词
+  > 例子:`viw`,`diw`or `vaw`,`daw`
 - `(`or`)` or `b`: ()
 - `[`or`]` : []
 - `{`or`}` or `B`: {}
