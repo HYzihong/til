@@ -3,28 +3,13 @@
  * @Date: 2022-06-05 18:14:29
  * @LastEditors: hy
  * @Description:
- * @LastEditTime: 2022-06-10 17:57:50
+ * @LastEditTime: 2022-06-13 23:17:16
  * @FilePath: /til/vim/base_operation.md
  * Copyright 2022 hy, All Rights Reserved.
  * 仅供学习使用~
 -->
 
 # vim
-
-### 三种模式
-
-insert 模式：插入模式
-normal 模式：普通模式
-visual 模式：选择(可视化)模式
-
-### 基本操作
-
-#### 上下左右
-
-h: 向左移动一个字符
-j: 向下移动一个字符
-k: 向上移动一个字符
-l: 向右移动一个字符
 
 #### vim 退出 `insert模式`操作
 
