@@ -3,7 +3,7 @@
  * @Date: 2022-06-13 21:00:02
  * @LastEditors: hy
  * @Description:
- * @LastEditTime: 2022-06-13 21:00:24
+ * @LastEditTime: 2022-07-24 12:29:00
  * @FilePath: /til/vim/vim_move_operation.md
  * Copyright 2022 hy, All Rights Reserved.
  * 仅供学习使用~
@@ -20,9 +20,14 @@
 
 ### 移动到行首
 
-- `0`
-- `^`
-  - 到本行第一个不是 blank 字符的位置
+- `0`: 光标移动到行首
+- `^`: 光标移动到行首的第一个不是 `block 字符`(空格、Tab、换行、回车等)的位置
+
+```js
+function a() {
+  return 1;
+}
+```
 
 ---
 
