@@ -34,12 +34,21 @@ try {
 
 ```js
 
-Array.prototype.mForEach = function (fn) {
-    for (let i = 0; i < this.length; i++) {
-        let res = fn(this[i], i, this);
-        if (typeof res !== "undefined" && (res == null || res == false)) break;
-    }
-}
+	Array.prototype.mForEach = function (fn) {
+	    for (let i = 0; i < this.length; i++) {
+	        let res = fn(this[i], i, this);
+	        if (typeof res !== "undefined" && (res == null || res == false)) break;
+	    }
+	}
+
+	let arr = [0, 1, 2, 3];
+
+	arr.mForEach(item => {
+        if (item > 2 ) {
+            return
+        }
+        console.log(item);
+    });
 
 ```
 
@@ -56,3 +65,11 @@ Array.prototype.mForEach = function (fn) {
 -   `Array.prototype.some()`
 -   `Array.prototype.find()
 -   `Array.prototype.findIndex()`
+
+
+
+--- 
+
+参考：
+
+1. [面试官问我JS中forEach能不能跳出循环](https://juejin.cn/post/6971972782292729886)
