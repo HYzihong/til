@@ -35,6 +35,17 @@
  
 ### 优缺点
 
+- 执行速度
+	- [[forEach和for循环的对比]]
+- 可维护性
+
+
+不同环境下的forEach
+- Array.prototype.forEach() -> [[javascript-array-forEach]]
+- Set.prototype.forEach() -> [[javascript-set-forEach]]
+- Map.prototype.forEach() -> [[javascript-map-forEach]]
+
+
 ---
 
 参考：
