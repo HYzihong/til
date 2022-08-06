@@ -9,7 +9,7 @@ set `forEach` 函数为集合对象中每个元素(即使是undefined)都执行
 
 ```js
 
-new Set(xxx).forEach(callback[, thisArg])
+new Set(...).forEach(callback[, thisArg])
 
 ```
 

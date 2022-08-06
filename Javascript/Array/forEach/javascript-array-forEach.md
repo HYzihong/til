@@ -31,19 +31,31 @@
 -  `forEach` 不会直接改变调用它的对象，但是那个对象可能会被 `callback` 函数改变。
 -  除了抛出异常以外，没有办法中止或跳出 `forEach()` 循环。[[怎么样让forEach 支持跳出循环]]
 
-总结就是：forEach 一调用就决定了遍历范围（范围只会变小不会变大），只遍历有效值（不遍历已删除和未初始化的），返回值只可能是`undefined`  ，不支持链式调用，只支持抛出异常的中止or跳出循环，不会直接改变调用它的对象，但是那个对象可能会被 `callback` 函数改变 。
+总结就是：forEach 一调用就决定了遍历范围（范围只会变小不会变大），只遍历有效值（不遍历已删除和未初始化的空值），返回值只可能是`undefined`  ，不支持链式调用，只支持抛出异常的中止or跳出循环，不会直接改变调用它的对象，但是那个对象可能会被 `callback` 函数改变 。
  
 ### 优缺点
 
+##### 优点
+
+- 代码简洁
+	- 不用计算繁琐的数组下标问题
 - 执行速度
 	- [[forEach和for循环的对比]]
 - 可维护性
 
+##### 缺点：
+- ie低版本不支持
+- 原生不可以跳出循环
 
-不同环境下的forEach
+#### 与`for...in` or `for of` or `for` 循环的差别
+
+#### 不同环境下的forEach
+
 - Array.prototype.forEach() -> [[javascript-array-forEach]]
 - Set.prototype.forEach() -> [[javascript-set-forEach]]
 - Map.prototype.forEach() -> [[javascript-map-forEach]]
+
+##### 兼容性支持
 
 
 ---
